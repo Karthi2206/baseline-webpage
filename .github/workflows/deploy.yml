@@ -9,7 +9,7 @@ on:
   # pull_request:
   #   branches: [ main, prod ]
   # Allows you to run this workflow manually from the Actions tab
-  # This is my f*** game now
+  # This is my f*** game!
   workflow_dispatch:
 
 # Env vars required for running the pipeline
