@@ -1,0 +1,20 @@
+kind: Deployment
+apiVersion: apps/v1
+metadata:
+   name: Baseline
+spec:
+   replicas: 2
+   selector:      # tells the controller which pods to watch/belong to
+    matchLabels:
+     app: Baseline
+   template:
+      metadata:
+        labels:
+          app: Baseline
+      spec:
+       containers:
+        - name: Baseline
+          image: karthi22dock/webapp_proj
+          imagePullPolicy: Always
+          ports:
+          - containerPort: 80
