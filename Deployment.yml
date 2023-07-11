@@ -1,7 +1,7 @@
 kind: Deployment
 apiVersion: apps/v1
 metadata:
-   name: my-baseline-deployment
+   name: my-baseline-dep
 spec:
    replicas: 2
    selector:      # tells the controller which pods to watch/belong to
