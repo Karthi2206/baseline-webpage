@@ -1,14 +1,14 @@
 kind: Service                             
 apiVersion: v1
 metadata:
-  name: Baseline
+  name: my-baseline-deployment
   labels:
-    app: Baseline
+    app: my-baseline-app
 spec:
   ports:
     - port: 8080                              
       targetPort: 80                    
       nodePort: 31200
   selector:
-    app: Baseline                    
+    app: my-baseline-app                    
   type: LoadBalancer                
